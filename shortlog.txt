@@ -1,8 +1,11 @@
-wexul (6):
+wexul (9):
       docs: add README with student info
       feat: create script.py
       feat: update script.py for task 4
       feat: add feature.py in feature branch
       docs: study foreign repo history for task 10
       chore: dummy commit 1
+      docs: generate git shortlog report for task 9
+      feat: force merge commit for task 6
+      Merge branch 'feature'
 
