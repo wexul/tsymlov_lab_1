@@ -1,0 +1,8 @@
+wexul (6):
+      docs: add README with student info
+      feat: create script.py
+      feat: update script.py for task 4
+      feat: add feature.py in feature branch
+      docs: study foreign repo history for task 10
+      chore: dummy commit 1
+
