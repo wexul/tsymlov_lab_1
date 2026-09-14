@@ -1,0 +1,26 @@
+* 9f2f8f4 feat: add rebase target file
+* 35e66f5 docs: save git log BEFORE rebase
+* e09f1db feat: update main branch for rebase demonstration
+* 4936f8a docs: expand README with detailed task report
+* 45de5da docs: update repo_history with URL and analysis for task 10
+* 008ff08 docs: update shortlog report after merge
+*   6209f1a Merge branch 'feature'
+|\  
+| * e09768c feat: force merge commit for task 6
+|/  
+* bffc294 docs: generate git shortlog report for task 9
+* d809cb9 chore: dummy commit 1
+* a8a0364 docs: study foreign repo history for task 10
+* aad51b1 feat: add feature.py in feature branch
+| * 955fb2f docs: generate git shortlog report for task 9
+| *   2738c63 Merge branch 'feature'
+| |\  
+| | * e3eacce feat: add feature.py in feature branch
+| |/  
+|/|   
+| * 10cf8ff chore: dummy commit 1
+| * ea316d6 docs: study foreign repo history for task 10
+|/  
+* 8665863 feat: update script.py for task 4
+* 6418c72 feat: create script.py
+* 2918cb6 docs: add README with student info
