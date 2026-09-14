@@ -1,4 +1,4 @@
-wexul (9):
+wexul (17):
       docs: add README with student info
       feat: create script.py
       feat: update script.py for task 4
@@ -8,4 +8,12 @@ wexul (9):
       docs: generate git shortlog report for task 9
       feat: force merge commit for task 6
       Merge branch 'feature'
+      docs: update shortlog report after merge
+      docs: update repo_history with URL and analysis for task 10
+      docs: expand README with detailed task report
+      feat: update main branch for rebase demonstration
+      docs: save git log BEFORE rebase
+      feat: add rebase target file
+      docs: save git log AFTER rebase proving hash change
+      docs: add actual git log output for task 10 and add .gitignore
 
