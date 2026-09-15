@@ -1,4 +1,4 @@
-wexul (17):
+wexul (20):
       docs: add README with student info
       feat: create script.py
       feat: update script.py for task 4
@@ -16,4 +16,7 @@ wexul (17):
       feat: add rebase target file
       docs: save git log AFTER rebase proving hash change
       docs: add actual git log output for task 10 and add .gitignore
+      docs: final update of shortlog.txt for task 9
+      docs: add real git log and shortlog output of octocat/Hello-World for task 10
+      docs: rewrite README as full lab report, remove unused rebase_test.txt
 
