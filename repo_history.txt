@@ -76,7 +76,8 @@ $ git log --merges --oneline
    по одному коммиту у каждого (git shortlog -sne).
 3. История не линейная: 7fd1a60 — merge-коммит с двумя родителями
    (553c207 и 7629413), т.е. изменение принято через pull request.
-4. Кроме master есть ветки octocat-patch-1 (b3cbd5b, Create CONTRIBUTING.md)
-   и test (b1b3f97, sentence case) — они ответвляются от 7fd1a60 и в master
-   не влиты.
+4. Кроме master есть ветки octocat-patch-1 (b1b3f97, sentence case)
+   и test (b3cbd5b, Create CONTRIBUTING.md) — обе ответвляются от 7fd1a60
+   и в master не влиты (git branch -r -v: origin/octocat-patch-1 -> b1b3f97,
+   origin/test -> b3cbd5b).
 5. Тегов в репозитории нет (git tag выводит пустой список).
