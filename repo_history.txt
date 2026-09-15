@@ -1,11 +1,82 @@
-URL: https://github.com/octocat/Hello-World.git
-Дата выполнения: 14.09.2026
+Задание 10. Клонирование чужого репозитория и изучение его истории
+====================================================================
 
-=== Вывод git log --oneline -n 10 ===
+Адрес репозитория: https://github.com/octocat/Hello-World.git
+Дата выполнения:   15.09.2026
+Команда клонирования:
+    git clone https://github.com/octocat/Hello-World.git external_repo
+    cd external_repo
+
+--------------------------------------------------------------------
+$ git log --oneline -n 10
+--------------------------------------------------------------------
 7fd1a60 Merge pull request #6 from Spaceghost/patch-1
 7629413 New line at end of file. --Signed off by Spaceghost
 553c207 first commit
 
-=== Вывод git shortlog -sne ===
-     1  Spaceghost
-     1  octocat
+--------------------------------------------------------------------
+$ git log --oneline --graph --all
+--------------------------------------------------------------------
+* b1b3f97 sentence case
+| * b3cbd5b Create CONTRIBUTING.md
+|/
+*   7fd1a60 Merge pull request #6 from Spaceghost/patch-1
+|\
+| * 7629413 New line at end of file. --Signed off by Spaceghost
+|/
+* 553c207 first commit
+
+--------------------------------------------------------------------
+$ git log --format='%h | %an <%ae> | %ad | %s' --date=short
+--------------------------------------------------------------------
+7fd1a60 | The Octocat <octocat@nowhere.com> | 2012-03-06 | Merge pull request #6 from Spaceghost/patch-1
+7629413 | Johnneylee Jack Rollins <Johnneylee.rollins@gmail.com> | 2011-09-13 | New line at end of file. --Signed off by Spaceghost
+553c207 | cameronmcefee <cameron@github.com> | 2011-01-26 | first commit
+
+--------------------------------------------------------------------
+$ git shortlog -sne
+--------------------------------------------------------------------
+     1	Johnneylee Jack Rollins <Johnneylee.rollins@gmail.com>
+     1	The Octocat <octocat@nowhere.com>
+     1	cameronmcefee <cameron@github.com>
+
+--------------------------------------------------------------------
+$ git shortlog
+--------------------------------------------------------------------
+Johnneylee Jack Rollins (1):
+      New line at end of file. --Signed off by Spaceghost
+
+The Octocat (1):
+      Merge pull request #6 from Spaceghost/patch-1
+
+cameronmcefee (1):
+      first commit
+
+--------------------------------------------------------------------
+$ git branch -a
+--------------------------------------------------------------------
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/octocat-patch-1
+  remotes/origin/test
+
+--------------------------------------------------------------------
+$ git log --merges --oneline
+--------------------------------------------------------------------
+7fd1a60 Merge pull request #6 from Spaceghost/patch-1
+
+--------------------------------------------------------------------
+Анализ истории
+--------------------------------------------------------------------
+1. В основной ветке master 3 коммита: 553c207 (первый коммит, 26.01.2011),
+   7629413 (правка в ветке Spaceghost/patch-1, 13.09.2011) и 7fd1a60
+   (merge-коммит pull request #6, 06.03.2012).
+2. Авторов трое: cameronmcefee, Johnneylee Jack Rollins, The Octocat —
+   по одному коммиту у каждого (git shortlog -sne).
+3. История не линейная: 7fd1a60 — merge-коммит с двумя родителями
+   (553c207 и 7629413), т.е. изменение принято через pull request.
+4. Кроме master есть ветки octocat-patch-1 (b3cbd5b, Create CONTRIBUTING.md)
+   и test (b1b3f97, sentence case) — они ответвляются от 7fd1a60 и в master
+   не влиты.
+5. Тегов в репозитории нет (git tag выводит пустой список).
