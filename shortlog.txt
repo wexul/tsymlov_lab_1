@@ -1,4 +1,4 @@
-wexul (20):
+wexul (22):
       docs: add README with student info
       feat: create script.py
       feat: update script.py for task 4
@@ -19,4 +19,6 @@ wexul (20):
       docs: final update of shortlog.txt for task 9
       docs: add real git log and shortlog output of octocat/Hello-World for task 10
       docs: rewrite README as full lab report, remove unused rebase_test.txt
+      docs: update shortlog report for task 9
+      docs: fix branch-to-commit mapping in repo_history analysis, clarify rebase evidence in README
 
